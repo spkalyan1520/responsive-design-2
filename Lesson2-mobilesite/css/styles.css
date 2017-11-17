@@ -1,0 +1,13 @@
+.menuBar{
+    color:#fff;
+    text-align:center;
+}
+.button{
+    background:#777777;
+    width:24%;
+    margin:0.5%;
+    float:left;
+}
+body{
+    background:url('../images/dark_hardwood.jpg') repeat;
+}
