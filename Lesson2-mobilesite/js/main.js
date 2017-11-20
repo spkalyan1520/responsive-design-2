@@ -1,8 +1,14 @@
 $('.bottom-menu li').click(function(e){
     e.stopPropagation();
     $('.bottom-menu li').removeClass('selected');
+    var $el;
     if($(event.target).is('li'))
-        $(event.target).addClass('selected');
+        $el = $(event.target);
     else
-      $(event.target).closest('li').addClass('selected');
+      $el = $(event.target).closest('li');
+    $el.addClass('selected');
+    var text = $el.attr('tab').trim();
+    $('.main div').hide();
+    $('.main').find('.'+text).show();
+    window.scrollTo(0,0);
 });

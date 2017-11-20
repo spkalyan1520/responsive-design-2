@@ -22,6 +22,15 @@ img{
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
+body {
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
@@ -37,7 +46,6 @@ img{
 }
 /* Bottom Menu */
 .bottom-menu{
-    font-size:1em;
     bottom:0;
     position:fixed;
     width:100%;
@@ -52,11 +60,10 @@ img{
     float:left;
     list-style:none;
     width: 20%;
-    height:100%;
     background-color:#21222b;
-    opacity:0.5;
+    opacity:1;
     font-size:2.8em;
-    padding: 4% 0 4% 0;
+    padding: 2.5% 0 2% 0;
 }
 
 .bottom-menu ul li.selected{
@@ -65,11 +72,6 @@ img{
 }
 .bottom-menu ul li.selected span:before{
     color:#fff;
-}
-
-.bottom-menu ul li img{
-    max-height:1.6em;
-    padding-top:0.15em;
 }
 
 .icon-document:before {
@@ -95,7 +97,7 @@ img{
     position:fixed;
     width:100%;
     top:0;
-    padding:3% 0 3% 0;
+    padding:1% 0 0.5% 0;
     background:#21222b;
 }
 .top-menu .content{
@@ -106,16 +108,35 @@ img{
     width:3%;
     float:left;
     vertical-align: middle;
-    padding:1.5% 0 1.5% 8%;
+    padding:1.75% 0 1.75% 8%;
 
 }
 .top-menu .title{
     float:left;
     color:#fff;
-    width:60%;
+    width:70%;
     padding:0.75% 0 0.75% 3%;
     text-align: left;
     white-space: nowrap;
     vertical-align: middle;
+}
+.main{
+    margin:12% 5% 10% 5%;
+    font-size:100%;
+    color:#fff;
+    font-family: OpenSans;
+    overflow:auto;
+    line-height:1.5;
+    font-size: 1.3em;
+}
 
+.main h1{
+    font-size:2em;
+}
+.main div{
+    display:none;
+}
+
+.main .recent{
+    display:block;
 }
